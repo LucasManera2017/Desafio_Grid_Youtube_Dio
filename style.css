@@ -7,14 +7,71 @@
   font-size: 14px;
 }
 
+body {
+  display: grid; 
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 80px repeat(3, 1fr);
+  grid-template-areas: 
+  "header header header header header"
+  "sidebar item01 item02 item03 item04"
+  "sidebar item05 item06 item07 item08"
+  "sidebar item09 item10 item11 item12";
+}
+
 header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+.item-01 {
+  grid-area: item01;
+}
+.item-02 {
+  grid-area: item02;
+}
+.item-03 {
+  grid-area: item03;
+}
+.item-04 {
+  grid-area: item04;
+}
+.item-05 {
+  grid-area: item05;
+}
+.item-06 {
+  grid-area: item06;
+}
+.item-07 {
+  grid-area: item07;
+}
+.item-08 {
+  grid-area: item08;
+}
+.item-09 {
+  grid-area: item09;
+}
+.item-10 {
+  grid-area: item10;
+}
+.item-11 {
+  grid-area: item11;
+}
+.item-12 {
+  grid-area: item12;
+}
+
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px;
 }
 
-aside {
+.aside {
   display: flex;
   flex-direction: column;
   justify-content: left;
